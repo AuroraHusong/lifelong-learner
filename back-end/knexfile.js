@@ -1,16 +1,13 @@
-// Update with your config settings.
 
-/**
- * @type { Object.<string, import("knex").Knex.Config> }
- */
+
 module.exports = {
   development: {
-    client: 'postgresql', // The database client you're using (e.g., 'postgresql', 'mysql', 'sqlite3', etc.)
+    client: 'postgresql',
     connection: {
-      host: 'bubble.db.elephantsql.com',
-      database: 'toxlpykm',
-      user: 'toxlpykm',
-      password: 'DHYuAMbg90jI-14GLtVu6mp_TL0k-BA3',
+      host: process.env.DB_HOST,
+      database: process.env.DB_NAME,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
     },
     migrations: {
       directory: './db/migrations',
@@ -18,5 +15,5 @@ module.exports = {
     seeds: {
       directory: './db/seeds',
     },
-    },
-  }
+  },
+}

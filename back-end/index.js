@@ -1,13 +1,15 @@
 require('dotenv').config()
 const express = require('express');
+
 const app = express();
 const knex = require('knex');
-const knexConfig = require('./knexfile'); // Adjust the path as needed
+const knexConfig = require('./knexfile');
+const bodyParser = require("body-parser");
 
-const db = knex(knexConfig.development); // Use the appropriate environment (development, production, etc.)
-const coursesData = require('../api/api');
+const db = knex(knexConfig.development);
+const coursesData = require('../front-end/src/api/api');
 
-// Define the courses API route
+app.use(bodyParser.json());
 app.get('/api/courses', (req, res) => {
   res.json(coursesData);
 });

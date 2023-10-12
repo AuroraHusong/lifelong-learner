@@ -1,39 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import coursesData from './api/api.js'; // Use the correct path to api.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import coursesData from './api/api.js';
 
+import Dashboard from './Dashboard.js';
 
 const BASE_URL = 'http://localhost:3000';
 
-const App = () => {
-
- 
+function App() {
   return (
-    <div>
-      <h1>Hello</h1>
-      {coursesData.length > 0 && (
-        <ul>
-          {coursesData.map((category) => (
-            <li key={category.category}>
-              <h2>{category.category}</h2>
-              <ul>
-                {category.courses.map((course) => (
-                  <li key={course.title}>
-                    <h3>{course.title}</h3>
-                    <p>{course.description}</p>
-                    <p>Level: {course.level}</p>
-                    <img src={course.imageUrl} width='200px' height= '200px' alt={course.title} />
-                    <p>Author: {course.author}</p>
-                    <p>Duration: {course.duration}</p>
-                    <p>Enrolled: {course.isEnrolled ? 'Yes' : 'No'}</p>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
+    <Router>
+      <div>
+
+        
+        <Routes>
+
+          <Route exact path="/" element={<Dashboard />} />
+
+        </Routes>
+
+      </div>
+    </Router>
   );
-};
+}
 
 export default App;

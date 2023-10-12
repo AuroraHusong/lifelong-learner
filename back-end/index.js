@@ -1,6 +1,6 @@
 require('dotenv').config()
 const express = require('express');
-
+const cors = require('cors');
 const app = express();
 const knex = require('knex');
 const knexConfig = require('./knexfile');
@@ -9,6 +9,9 @@ const bodyParser = require("body-parser");
 const db = knex(knexConfig.development);
 const coursesData = require('../front-end/src/api/api');
 
+app.use(cors({
+  origin: 'http://localhost:3001',
+}));
 app.use(bodyParser.json());
 app.get('/api/courses', (req, res) => {
   res.json(coursesData);

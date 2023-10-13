@@ -26,13 +26,11 @@ function Dashboard() {
 <ul>
 {coursesData[2].courses.slice(0, 4).map((course) => (
     
-      <div className="innerDiv">
-        <img
-          loading="lazy"
-          src={course.imageUrl}
-          className="img"
-          alt="Course Image"
-        />
+      <div className="innerDiv" style={{ backgroundImage: `url(${course.imageUrl})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+       }}>
+        
         <div className="textCourseDivEnrolled">
           <div className="courseInfoDiv">
             <div className="courseTitleDiv">{course.title}</div>
@@ -41,22 +39,11 @@ function Dashboard() {
                 <div className="subjectDiv">{course.author}</div>
                 <div className="timeDiv">{course.duration}</div>
               </div>
-              <div className="buttonDiv">
-                
-                  <div className="topBtnDiv">
-                    <a href="google.com">
-                    <img
-                      loading="lazy"
-                      src="/images/misc/CourseAdded.png"
-                      className="img-2"
-                    />
-                    </a>
-                  </div>
+             
 
                 
               </div>
             </div>
-          </div>
           <div className="timelineDiv">
             <div className="timlineBarDiv">
               <div className="completionTextDiv">30% complete</div>

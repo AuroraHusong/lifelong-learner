@@ -364,7 +364,7 @@ const coursesData = [
             title: 'Textile and Fabric Selection',
             description: 'Choose the right fabrics for your fashion designs.',
             level: 'Intermediate',
-            imageUrl: 'images/api_images/fashion/fashion 3.jpg',
+            imageUrl: 'images/api_images/fashion/fashion3.jpg',
             author: 'Nora Davis',
             duration: '5.5 hours',
             isEnrolled: false,
@@ -373,7 +373,7 @@ const coursesData = [
             title: 'Fashion Branding and Marketing',
             description: 'Build and promote your fashion brand.',
             level: 'Intermediate',
-            imageUrl: 'images/api_images/fashion/fashion 4.jpg',
+            imageUrl: 'images/api_images/fashion/fashion4.jpg',
             author: 'Ella Martinez',
             duration: '6 hours',
             isEnrolled: false,
@@ -382,7 +382,7 @@ const coursesData = [
             title: 'Fashion History and Trends',
             description: 'Explore the history and evolution of fashion trends.',
             level: 'Intermediate',
-            imageUrl: 'images/api_images/fashion/fashion 5.jpg',
+            imageUrl: 'images/api_images/fashion/fashion5.jpg',
             author: 'James Johnson',
             duration: '6.5 hours',
             isEnrolled: false,
@@ -391,7 +391,7 @@ const coursesData = [
             title: 'Fashion Illustration',
             description: 'Master the art of fashion illustration and presentation.',
             level: 'Intermediate',
-            imageUrl: 'images/api_images/fashion/fashion 6.jpg',
+            imageUrl: 'images/api_images/fashion/fashion6.jpg',
             author: 'Mia Turner',
             duration: '7 hours',
             isEnrolled: false,
@@ -400,7 +400,7 @@ const coursesData = [
             title: 'Sustainable Fashion Design',
             description: 'Design environmentally-friendly and sustainable fashion.',
             level: 'Intermediate',
-            imageUrl: 'images/api_images/fashion/fashion 7.jpg',
+            imageUrl: 'images/api_images/fashion/fashion7.jpg',
             author: 'Ava Mitchell',
             duration: '6.5 hours',
             isEnrolled: false,
@@ -409,7 +409,7 @@ const coursesData = [
             title: 'Fashion Merchandising',
             description: 'Learn how to merchandise and sell fashion products.',
             level: 'Intermediate',
-            imageUrl: 'images/api_images/fashion/fashion 8.jpg',
+            imageUrl: 'images/api_images/fashion/fashion8.jpg',
             author: 'Liam Wilson',
             duration: '6 hours',
             isEnrolled: false,
@@ -418,7 +418,7 @@ const coursesData = [
             title: 'Fashion Photography',
             description: 'Capture fashion moments and create stunning photos.',
             level: 'Intermediate',
-            imageUrl: 'images/api_images/fashion/fashion 9.jpg',
+            imageUrl: 'images/api_images/fashion/fashion9.jpg',
             author: 'Oliver Davis',
             duration: '5 hours',
             isEnrolled: false,
@@ -427,7 +427,7 @@ const coursesData = [
             title: 'Haute Couture and Runway Fashion',
             description: 'Explore high fashion and runway design techniques.',
             level: 'Intermediate',
-            imageUrl: 'images/api_images/fashion/fashion 10.jpg',
+            imageUrl: 'images/api_images/fashion/fashion10.jpg',
             author: 'Sophia Clark',
             duration: '8 hours',
             isEnrolled: false,
@@ -816,5 +816,6 @@ const coursesData = [
 ]
 
   
-  export default coursesData;
+module.exports = coursesData;
+
   

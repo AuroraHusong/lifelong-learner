@@ -21,12 +21,12 @@ function Dashboard() {
         
 				</div>
 			</div>
-			<div>
-				<h1>Active Courses</h1>
+			<div className ="sectionOfClasses">
+				<h4>Active Courses:</h4>
 <ul>
-{coursesData[2].courses.slice(0, 4).map((course) => (
+{coursesData[3].courses.slice(0, 4).map((course) => (
     
-      <div className="innerDiv" style={{ backgroundImage: `url(${course.imageUrl})`,
+      <a href="#" className="innerDiv" style={{ backgroundImage: `url(${course.imageUrl})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
        }}>
@@ -34,15 +34,7 @@ function Dashboard() {
         <div className="textCourseDivEnrolled">
           <div className="courseInfoDiv">
             <div className="courseTitleDiv">{course.title}</div>
-            <div className="courseDescDiv">
-              <div className="allCourseInfo">
-                <div className="subjectDiv">{course.author}</div>
-                <div className="timeDiv">{course.duration}</div>
-              </div>
-             
 
-                
-              </div>
             </div>
           <div className="timelineDiv">
             <div className="timlineBarDiv">
@@ -59,98 +51,67 @@ function Dashboard() {
             </div>
           </div>
         </div>
-      </div>
+      
+      </a>
   ))}
 </ul>
 
 			</div>
 
-			<div>
-				<h1>Recommended Courses</h1>
-				<ul>
-                {coursesData[1].courses.slice(0, 4).map((course) => (
-      <div className="innerDiv">
-        <img
-          loading="lazy"
-          src={course.imageUrl} 
-          className="img"
-          alt="Course Image"
-        />
-        <div className="textCourseDiv">
+			<div className ="sectionOfClasses">
+				<h4>Recommended Courses:</h4>
+        <ul>
+  {coursesData[1].courses.slice(0, 4).map((course) => (
+        <a href="#" className="innerDiv" 
+          style={{
+            backgroundImage: `url(${course.imageUrl})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        >
+        <div className="textCourseDivEnrolled">
           <div className="courseInfoDiv">
             <div className="courseTitleDiv">{course.title}</div>
-            <div className="courseDescDiv">
-              <div className="allCourseInfo">
-                <div className="subjectDiv">{course.author}</div>
-                <div className="timeDiv">{course.duration}</div>
-                <div className="unenrolledBottomBtnDiv">
+            <div className="subjectDiv">{course.author}</div>
+            <div className="timeDiv">{course.duration}</div>
+            <div className="unenrolledBottomBtnDiv">
                   {course.description}
                 </div>
-              </div>
-              <div className="buttonDiv">
-                    <img
-                      loading="lazy"
-                      src="./images/misc/AddCourse.png"
-                      className="img-2"
-                    />
-                  </div>
-             
-
-              
-              </div>
-            </div>
           </div>
         </div>
-
+      </a>
   ))}
 </ul>
-
-			</div>
-			<div>
-				<h1>Trending In Your Interests</h1>
-				<ul>
-                {coursesData[3].courses.slice(0, 4).map((course) => (
-      <div className="innerDiv">
-        <img
-          loading="lazy"
-          src={course.imageUrl} 
-          className="img"
-          alt="Course Image"
-        />
-        <div className="textCourseDiv">
+</div>
+     <div className ="sectionOfClasses">
+				<h4>Trending In Your Interests:</h4>
+        <ul>
+  {coursesData[0].courses.slice(0, 4).map((course) => (
+        <a href="#" className="innerDiv" 
+          style={{
+            backgroundImage: `url(${course.imageUrl})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            
+          }}
+        >
+        <div className="textCourseDivEnrolled">
           <div className="courseInfoDiv">
             <div className="courseTitleDiv">{course.title}</div>
-            <div className="courseDescDiv">
-              <div className="allCourseInfo">
-                <div className="subjectDiv">{course.author}</div>
-                <div className="timeDiv">{course.duration}</div>
-                <div className="unenrolledBottomBtnDiv">
+            <div className="subjectDiv">{course.author}</div>
+            <div className="timeDiv">{course.duration}</div>
+            <div className="unenrolledBottomBtnDiv">
                   {course.description}
                 </div>
-              </div>
-              <div className="buttonDiv">
-                
-                  <div className="unenrolledTopBtnDiv">
-                    <img
-                      loading="lazy"
-                      src="./images/misc/AddCourse.png"
-                      className="img-2"
-                    />
-                  </div>
-             
-
-              
-              </div>
-            </div>
           </div>
         </div>
-      </div>
+      </a>
   ))}
-</ul>
+    
+    </ul>
+</div>
 
-			</div>
-
-		</span>
+</span>
 	);
 }
 export default Dashboard;

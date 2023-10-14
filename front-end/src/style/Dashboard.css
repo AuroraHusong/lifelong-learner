@@ -1,3 +1,7 @@
+.sectionOfClasses{
+  margin:20px;
+}
+
 .container {
   max-width: 100%;
   justify-content: space-between;
@@ -33,7 +37,7 @@
 }
 
 .title {
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 40px;
   font-weight: 700;
@@ -68,72 +72,78 @@
 }
 
 .button-container {
-  align-items: center;
-  background-image: linear-gradient(144deg, #3d7260, #3ea38d 50%, #70dfe7);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(202, 241, 230, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: flex;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 19px 24px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
+  color:white;
   margin-top: 78px;
   margin-right: 900px;
   margin-bottom: 100px;
-  border-color: rgb(0, 0, 0);
-}
+  cursor:pointer;
+    position:relative;
+    padding:10px 20px;
+    background-image: linear-gradient(144deg, #2f5c4d, rgb(68, 179, 155) 50%, #70e7dd);
+    box-shadow: rgba(202, 241, 230, 0.2) 0 15px 30px -5px;
+    font-size:28px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    transition:all 1s;
+    &:after,&:before{
+      content:" ";
+      width:10px;
+      height:10px;
+      position:absolute;
+      border :0px solid #ffffff;
+      transition:all 1s;
+      }
+    &:after{
+      top:-1px;
+      left:-1px;
+      border-top:5px solid rgb(255, 255, 255);
+      border-left:5px solid rgb(255, 249, 249);
+    }
+    &:before{
+      bottom:-1px;
+      right:-1px;
+      border-bottom:5px solid rgb(255, 255, 255);
+      border-right:5px solid rgb(255, 255, 255);
+    }
+    &:hover{
+      border-top-right-radius:0px;
+    border-bottom-left-radius:0px;
+    background-image: linear-gradient(144deg, #70e7dd, rgb(68, 179, 155) 50%,#2f5c4d );
+       color:rgb(0, 0, 0);
+      &:before,&:after{
+        
+        width:100%;
+        height:100%;
+         border-color:rgb(255, 255, 255);
+      }
+    }
+  }
+  
 
 .button-container a {
   text-decoration: none;
 }
 
-.button-container a .button-text {
-  color: var(--Black, #ffffff);
-}
-
-.button-container a .button-text:hover {
-  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
-  text-decoration: none;
-  transition-duration: 0.15s, 0.15s;
-}
-
-.button-text {
-  color: var(--Black, #ffffff);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  align-self: center;
-  text-wrap: nowrap;
-}
-
-@media (max-width: 991px) {
-  .button-text {
-      text-wrap: initial;
-  }
-}
-
-h1 {
+h4 {
   padding: 10px;
+  font-size: 40px;
+  font-weight:500;
+  margin-bottom: 10px;
 }
 
 .innerDiv {
   width: 22%;
-  height: 350px;
+  height: 320px;
   display: flex;
   flex-direction: column;
   margin: 10px;
   border-radius: 15px;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: transform 0.4s ease;
+}
+.innerDiv:hover{
+  transform: scale(1.1)
 }
 
 ul {
@@ -194,6 +204,7 @@ ul {
   height: 72px;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
   letter-spacing: 2px;
+  font-family: 'Coiny'
 }
 
 .courseDescDiv {
@@ -233,7 +244,8 @@ ul {
   color: #ffffff;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
   letter-spacing: 2px;
-  margin-top:15px;
+  margin-top:15%;
+  font-family: 'Coiny'
 }
 
 .timeDiv {
@@ -245,6 +257,7 @@ ul {
   color: #ffffff;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
   letter-spacing: 2px;
+  font-family: 'Coiny'
 }
 
 .buttonDiv {
@@ -310,7 +323,7 @@ ul {
   align-items: center;
   align-self: stretch;
   display: flex;
-  margin-top: 40px;
+  margin-top: 30%;
   flex-direction: column;
 
 }
@@ -509,13 +522,17 @@ ul {
 }
 
 .unenrolledBottomBtnDiv {
-  align-self: stretch;
-  color: #000;
-  font-size: 16px;
+  text-align: center;
+  font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  max-width: 70%;
-  padding-left: 15px;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  letter-spacing: 2px;
+  margin-top:20px;
+  margin-left:10px;
+  margin-right:10px;
+  font-family: 'Coiny'
 }
 
 .img-2 {
@@ -642,3 +659,4 @@ ul {
       text-wrap: initial;
   }
 }
+

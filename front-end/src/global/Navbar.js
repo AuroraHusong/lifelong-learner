@@ -36,15 +36,27 @@ function  NavBar() {
                     />
                     </Link>
                     <div className="nav-items">
-                      <div className="nav-links">
-                        <div className="nav-link-text">Browse</div>
-                        <img
-                          loading="lazy"
-                          src ='/images/misc/dropdownArrow.png'
-                          className="nav-link-icon"
-                          alt="Image Description"
-                        />
-                      </div>
+                    
+  <div className="nav-links dropdown">
+    <div className="nav-link-text">Browse</div>
+    <img
+      loading="lazy"
+      src="/images/misc/dropdownArrow.png"
+      className="nav-link-icon"
+      alt="Image Description"
+    />
+    <div className="dropdown-content">
+      <a href="#">Programming</a>
+      <a href="#">Design</a>
+      <a href="#">Business & Management</a>
+      <a href="#">Fashion Design</a>
+      <a href="#">Physical & Mental Health</a>
+      <a href="#">History & Religion</a>
+      <a href="#">Personal Development</a>
+      <a href="#">Politics & Law</a>
+    </div>
+  </div>
+
                       <div className="nav-search">
                       <div className="nav-search">
   <form onSubmit={handleSearch} role="search">
@@ -75,7 +87,7 @@ function  NavBar() {
                       <img
                         loading="lazy"
                         src ='/images/misc/courses.png'
-                        className='nav-image-icon'
+                        className='nav-image-icon-1'
                         alt="Image Description"
                       />
                       </Link>

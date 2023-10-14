@@ -49,7 +49,7 @@ function  Footer() {
               <a href="#">Terms</a>
               <div className="footer-privacy-choices">
                 Your Privacy Choices
-                <img loading="lazy" srcset="..." className="privacy-img" />
+                <img loading="lazy" srcSet="..." className="privacy-img" />
               </div>
             </div>
           </div>

@@ -146,6 +146,33 @@ h4 {
   transform: scale(1.1)
 }
 
+@media (max-width: 991px) {
+  .container{
+    max-height: 200px;
+  }
+  .title{
+    font-size:25px;
+    line-height: 30px;
+  }
+  .button-container{
+    width:100px;
+    height:30px;
+    margin:0;
+    font-size:15px;
+  }
+  .innerDiv{
+    width: 90%;
+    height:250px;
+    align-items: center;
+  }
+  .timelineDiv{
+    padding:0;
+    margin-top:5px;
+  }
+  ul{
+    flex-direction:column;
+  }
+}
 ul {
   display: flex;
   width: 100%;
@@ -201,7 +228,6 @@ ul {
   font-size: 25px;
   font-weight: 700;
   line-height: 36px;
-  height: 72px;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
   letter-spacing: 2px;
   font-family: 'Coiny'

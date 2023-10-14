@@ -24,7 +24,7 @@ function Dashboard() {
 			<div className ="sectionOfClasses">
 				<h4>Active Courses:</h4>
 <ul>
-{coursesData[3].courses.slice(0, 4).map((course) => (
+{coursesData[4].courses.slice(0, 4).map((course) => (
     
       <a href="#" className="innerDiv" style={{ backgroundImage: `url(${course.imageUrl})`,
       backgroundSize: 'cover',
@@ -40,7 +40,7 @@ function Dashboard() {
             <div className="timlineBarDiv">
               <div className="completionTextDiv">30% complete</div>
             </div>
-            <div className="weeklyDiv">
+            <div className="weeklyDiv mobileHidden">
               <div className="mondayDiv">M</div>
               <div className="tuesdayDiv">T</div>
               <div className="wednesdayDiv">W</div>

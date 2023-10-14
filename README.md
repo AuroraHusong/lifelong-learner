@@ -1,3 +1,8 @@
-![navbar](https://github.com/AuroraHusong/lifelong-learner/assets/90487267/00ab52b8-cd6e-431d-9e86-ea1aa85783fd)
-![Screenshot 2023-06-15 205330](https://github.com/AuroraHusong/lifelong-learner/assets/90487267/2b21a11e-097a-4603-ae14-b53646bcfcc2)
+An Education Site for Lifelong Learners!
+(A work in progress!)
 
+Front End:
+https://lifelonglearner.onrender.com/
+
+/dashboard
+![dashboard](https://github.com/AuroraHusong/lifelong-learner/assets/90487267/8572fe55-63ba-412b-9762-2e8d5b4fc1cb)

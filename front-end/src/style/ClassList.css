@@ -1,0 +1,19 @@
+.parentOfInnerDiv{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.categoryHeader{
+    margin:0;
+}
+.innerDiv-CL{
+    height:250px;
+    margin:0;
+    
+}
+
+.textCourseDivEnrolled-CL{
+   
+    height:250px;
+}

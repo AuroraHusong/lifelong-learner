@@ -352,7 +352,7 @@ const coursesData = [
             isEnrolled: false,
           },
           {
-            title: 'Pattern Making and Garment Construction',
+            title: 'Pattern Making',
             description: 'Create patterns and sew your own garments.',
             level: 'Intermediate',
             imageUrl: 'images/api_images/fashion/fashion2.jpg',
@@ -565,254 +565,345 @@ const coursesData = [
           },
         ],
       },
+      {
+        category: 'History & Religion',
+        courses: [
           {
-            category: 'History & Religion',
-            courses: [
-              {
-                title: 'World History: Ancient Civilizations',
-                description: 'Explore the history of ancient civilizations around the world.',
-                level: 'Beginner',
-              },
-              {
-                title: 'Religions of the World',
-                description: 'Learn about the major world religions and their beliefs.',
-                level:'Intermediate',
-            },
-            {
-              title: 'European History: Renaissance to Modern Era',
-              description: 'Study European history from the Renaissance to the modern era.',
-              level: 'Intermediate',
-            },
-            {
-              title: 'Ancient Egypt: Pharaohs and Pyramids',
-              description: 'Delve into the history of ancient Egypt, its pharaohs, and pyramids.',
-              level: 'Intermediate',
-            },
-            {
-              title: 'The Middle Ages and Medieval History',
-              description: 'Explore the history of the Middle Ages and medieval societies.',
-              level: 'Intermediate',
-            },
-            {
-              title: 'World Religions: Comparative Study',
-              description: 'Compare and contrast the worlds major religions.',
-              level: 'Intermediate',
-            },
-            {
-              title: 'American History: Founding to Present',
-              description: 'Trace the history of the United States from its founding to the present.',
-              level: 'Intermediate',
-            },
-            {
-              title: 'Religion and Philosophy',
-              description: 'Examine the intersection of religion and philosophy in human history.',
-              level: 'Intermediate',
-            },
-            {
-              title: 'History of Art and Architecture',
-              description: 'Study the history of art and architectural styles across time.',
-              level: 'Intermediate',
-            },
-            {
-              title: 'The Reformation and Religious Movements',
-              description: 'Learn about the Reformation and significant religious movements.',
-              level: 'Intermediate',
-            },
-            {
-              title: 'Ancient Greece: Mythology and History',
-              description: 'Explore the mythology and history of ancient Greece.',
-              level: 'Intermediate',
-            },
-            {
-              title: 'The Crusades and Medieval Warfare',
-              description: 'Dive into the history of the Crusades and medieval warfare.',
-              level: 'Intermediate',
-            },
-            {
-              title: 'Religious Studies: Contemporary Issues',
-              description: 'Examine contemporary issues in religious studies and spirituality.',
-              level: 'Intermediate',
-            },
-            ]
-        },
-        {
-            category: 'Lifestyle & Personal Development',
-            courses: [
-              {
-                title: 'Personal Growth and Self-Improvement',
-                description: 'Embark on a journey of personal growth and self-improvement.',
-                level: 'Beginner',
-              },
-              {
-                title: 'Mindfulness and Meditation Practices',
-                description: 'Incorporate mindfulness and meditation into your daily life.',
-                level: 'Intermediate',
-              },
-              {
-                title: 'Healthy Cooking and Nutrition',
-                description: 'Learn to cook nutritious and delicious meals for a healthy lifestyle.',
-                level: 'Intermediate',
-              },
-              {
-                title: 'Travel and Adventure Planning',
-                description: 'Plan exciting adventures and memorable travel experiences.',
-                level: 'Intermediate',
-              },
-              {
-                title: 'Time Management and Productivity',
-                description: 'Maximize your time and boost productivity in daily life.',
-                level: 'Intermediate',
-              },
-              {
-                title: 'Creative Hobbies and Crafts',
-                description: 'Explore creative hobbies and crafts for self-expression.',
-                level: 'Intermediate',
-              },
-              {
-                title: 'Healthy Relationships and Communication',
-                description: 'Build healthy relationships and improve communication skills.',
-                level: 'Intermediate',
-              },
-              {
-                title: 'Financial Wellness and Budgeting',
-                description: 'Achieve financial wellness through effective budgeting.',
-                level: 'Intermediate',
-              },
-              {
-                title: 'Stress Reduction and Relaxation',
-                description: 'Find methods to reduce stress and relax in daily life.',
-                level: 'Intermediate',
-              },
-              {
-                title: 'Goal Setting and Achievement',
-                description: 'Set and achieve personal and professional goals.',
-                level: 'Intermediate',
-              },
-              {
-                title: 'Digital Skills and Online Learning',
-                description: 'Master digital skills and enhance your online learning capabilities.',
-                level: 'Intermediate',
-              },
-              {
-                title: 'Life Coaching and Personal Transformation',
-                description: 'Experience life coaching and personal transformation strategies.',
-                level: 'Intermediate',
-              },
-            ],
+            title: 'World History: Ancient Civilizations',
+            description: 'Explore the history of ancient civilizations around the world.',
+            level: 'Beginner',
+            imageUrl: 'images/api_images/history/history1.jpg',
+            author: 'John Doe',
+            duration: '4 hours',
+            isEnrolled: false
           },
           {
-            category: 'Politics & Law',
-            courses: [
-              {
-                title: 'Introduction to Political Science',
-                description: 'Explore the fundamentals of political science and government.',
-                level: 'Beginner',
-                imageUrl: 'https://example.com/intro_to_political_science.jpg',
-                author: 'Olivia White',
-                duration: '4 hours',
-                isEnrolled: false,
-              },
-              {
-                title: 'International Relations and Diplomacy',
-                description: 'Study international relations and the art of diplomacy.',
-                level: 'Intermediate',
-                imageUrl: 'https://example.com/international_relations_diplomacy.jpg',
-                author: 'Nathan Clark',
-                duration: '6 hours',
-                isEnrolled: false,
-              },
-              {
-                title: 'Constitutional Law and Civil Rights',
-                description: 'Examine constitutional law and civil rights in society.',
-                level: 'Intermediate',
-                imageUrl: 'https://example.com/constitutional_law_civil_rights.jpg',
-                author: 'Ella Baker',
-                duration: '5 hours',
-                isEnrolled: false,
-              },
-              {
-                title: 'Global Politics and Current Affairs',
-                description: 'Stay informed about global politics and current events.',
-                level: 'Intermediate',
-                imageUrl: 'https://example.com/global_politics_current_affairs.jpg',
-                author: 'James Wilson',
-                duration: '4.5 hours',
-                isEnrolled: false,
-              },
-              {
-                title: 'Criminal Justice and Law Enforcement',
-                description: 'Gain insights into the criminal justice system and law enforcement.',
-                level: 'Intermediate',
-                imageUrl: 'https://example.com/criminal_justice_law_enforcement.jpg',
-                author: 'Sophie Turner',
-                duration: '6 hours',
-                isEnrolled: false,
-              },
-              {
-                title: 'Environmental Policy and Sustainability',
-                description: 'Address environmental policy and sustainability challenges.',
-                level: 'Intermediate',
-                imageUrl: 'https://example.com/environmental_policy_sustainability.jpg',
-                author: 'Benjamin Adams',
-                duration: '5 hours',
-                isEnrolled: false,
-              },
-              {
-                title: 'Public Policy and Governance',
-                description: 'Learn about public policy development and governance.',
-                level: 'Intermediate',
-                imageUrl: 'https://example.com/public_policy_governance.jpg',
-                author: 'Ava Roberts',
-                duration: '4.5 hours',
-                isEnrolled: false,
-              },
-              {
-                title: 'Human Rights and Social Justice',
-                description: 'Advocate for human rights and social justice causes.',
-                level: 'Intermediate',
-                imageUrl: 'https://example.com/human_rights_social_justice.jpg',
-                author: 'David Miller',
-                duration: '5 hours',
-                isEnrolled: false,
-              },
-              {
-                title: 'Political Campaign Strategy',
-                description: 'Discover effective strategies for political campaigns.',
-                level: 'Intermediate',
-                imageUrl: 'https://example.com/political_campaign_strategy.jpg',
-                author: 'Lily Parker',
-                duration: '6 hours',
-                isEnrolled: false,
-              },
-              {
-                title: 'Legal Studies and Paralegal Training',
-                description: 'Explore legal studies and prepare for a career as a paralegal.',
-                level: 'Intermediate',
-                imageUrl: 'https://example.com/legal_studies_paralegal_training.jpg',
-                author: 'Michael Green',
-                duration: '4 hours',
-                isEnrolled: false,
-              },
-              {
-                title: 'Ethics in Politics and Law',
-                description: 'Discuss ethical considerations in politics and law.',
-                level: 'Intermediate',
-                imageUrl: 'https://example.com/ethics_in_politics_law.jpg',
-                author: 'Sophia King',
-                duration: '5 hours',
-                isEnrolled: false,
-              },
-              {
-                title: 'Public Speaking and Debate Skills',
-                description: 'Develop public speaking and debate skills for effective communication.',
-                level: 'Intermediate',
-                imageUrl: 'https://example.com/public_speaking_debate_skills.jpg',
-                author: 'Ethan Davis',
-                duration: '4.5 hours',
-                isEnrolled: false,
-              },
-        ],
-    }
+            title: 'Religions of the World',
+            description: 'Learn about the major world religions and their beliefs.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/history/history2.jpg',
+            author: 'Alice Smith',
+            duration: '5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'European History: Renaissance to Modern Era',
+            description: 'Study European history from the Renaissance to the modern era.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/history/history3.jpg',
+            author: 'Robert Johnson',
+            duration: '6 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Ancient Egypt: Pharaohs and Pyramids',
+            description: 'Delve into the history of ancient Egypt, its pharaohs, and pyramids.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/history/history4.jpg',
+            author: 'Emily Davis',
+            duration: '4.5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'The Middle Ages and Medieval History',
+            description: 'Explore the history of the Middle Ages and medieval societies.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/history/history5.jpg',
+            author: 'Michael White',
+            duration: '5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'World Religions: Comparative Study',
+            description: 'Compare and contrast the world\'s major religions.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/history/history6.jpg',
+            author: 'Sophia Johnson',
+            duration: '4 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'American History: Founding to Present',
+            description: 'Trace the history of the United States from its founding to the present.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/history/history7.jpg',
+            author: 'William Smith',
+            duration: '6 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Religion and Philosophy',
+            description: 'Examine the intersection of religion and philosophy in human history.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/history/history8.jpg',
+            author: 'Olivia Johnson',
+            duration: '4.5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'History of Art and Architecture',
+            description: 'Study the history of art and architectural styles across time.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/history/history9.jpg',
+            author: 'Daniel Wilson',
+            duration: '5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'The Reformation and Religious Movements',
+            description: 'Learn about the Reformation and significant religious movements.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/history/history10.jpg',
+            author: 'Sophie Johnson',
+            duration: '4.5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Ancient Greece: Mythology and History',
+            description: 'Explore the mythology and history of ancient Greece.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/history/history11.jpg',
+            author: 'David Davis',
+            duration: '5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'The Crusades and Medieval Warfare',
+            description: 'Dive into the history of the Crusades and medieval warfare.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/history/history12.jpg',
+            author: 'Laura Smith',
+            duration: '6 hours',
+            isEnrolled: false
+          }
+        ]
+      },
+      {
+        category: 'Lifestyle & Personal Development',
+        courses: [
+          {
+            title: 'Personal Growth and Self-Improvement',
+            description: 'Embark on a journey of personal growth and self-improvement.',
+            level: 'Beginner',
+            imageUrl: 'images/api_images/development/development1.jpg',
+            author: 'John Doe',
+            duration: '4 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Mindfulness and Meditation Practices',
+            description: 'Incorporate mindfulness and meditation into your daily life.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/development/development2.jpg',
+            author: 'Alice Smith',
+            duration: '5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Healthy Cooking and Nutrition',
+            description: 'Learn to cook nutritious and delicious meals for a healthy lifestyle.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/development/development7.jpg',
+            author: 'Robert Johnson',
+            duration: '6 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Travel and Adventure Planning',
+            description: 'Plan exciting adventures and memorable travel experiences.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/development/development3.jpg',
+            author: 'Emily Davis',
+            duration: '4.5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Time Management and Productivity',
+            description: 'Maximize your time and boost productivity in daily life.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/development/development4.jpg',
+            author: 'Michael White',
+            duration: '5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Creative Hobbies and Crafts',
+            description: 'Explore creative hobbies and crafts for self-expression.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/development/development10.jpg',
+            author: 'Sophia Johnson',
+            duration: '4 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Healthy Relationships and Communication',
+            description: 'Build healthy relationships and improve communication skills.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/development/development5.jpg',
+            author: 'William Smith',
+            duration: '6 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Financial Wellness and Budgeting',
+            description: 'Achieve financial wellness through effective budgeting.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/development/development6.jpg',
+            author: 'Olivia Johnson',
+            duration: '4.5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Stress Reduction and Relaxation',
+            description: 'Find methods to reduce stress and relax in daily life.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/development/development8.jpg',
+            author: 'Daniel Wilson',
+            duration: '5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Goal Setting and Achievement',
+            description: 'Set and achieve personal and professional goals.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/development/development9.jpg',
+            author: 'Sophie Johnson',
+            duration: '4.5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Digital Skills and Online Learning',
+            description: 'Master digital skills and enhance your online learning capabilities.',
+            level: 'Intermediate',
+            imageUrl: 'images/api_images/development/development11.jpg',
+            author: 'David Davis',
+            duration: '5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Life Coaching and Personal Transformation',
+            description: 'Experience life coaching and personal transformation strategies.',
+            level: 'Intermediate',
+            imageUrl:'images/api_images/development/development12.jpg',
+            author: 'Laura Smith',
+            duration: '6 hours',
+            isEnrolled: false
+          }
+        ]
+      },
+      {
+        category: 'Politics & Law',
+        courses: [
+          {
+            title: 'Introduction to Political Science',
+            description: 'Explore the fundamentals of political science and government.',
+            level: 'Beginner',
+            imageUrl: 'URL_to_image_25',
+            author: 'Olivia White',
+            duration: '4 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'International Relations and Diplomacy',
+            description: 'Study international relations and the art of diplomacy.',
+            level: 'Intermediate',
+            imageUrl: 'URL_to_image_26',
+            author: 'Nathan Clark',
+            duration: '6 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Constitutional Law and Civil Rights',
+            description: 'Examine constitutional law and civil rights in society.',
+            level: 'Intermediate',
+            imageUrl: 'URL_to_image_27',
+            author: 'Ella Baker',
+            duration: '5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Global Politics and Current Affairs',
+            description: 'Stay informed about global politics and current events.',
+            level: 'Intermediate',
+            imageUrl: 'URL_to_image_28',
+            author: 'James Wilson',
+            duration: '4.5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Criminal Justice and Law Enforcement',
+            description: 'Gain insights into the criminal justice system and law enforcement.',
+            level: 'Intermediate',
+            imageUrl: 'URL_to_image_29',
+            author: 'Sophie Turner',
+            duration: '6 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Environmental Policy and Sustainability',
+            description: 'Address environmental policy and sustainability challenges.',
+            level: 'Intermediate',
+            imageUrl: 'URL_to_image_30',
+            author: 'Benjamin Adams',
+            duration: '5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Public Policy and Governance',
+            description: 'Learn about public policy development and governance.',
+            level: 'Intermediate',
+            imageUrl: 'URL_to_image_31',
+            author: 'Ava Roberts',
+            duration: '4.5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Human Rights and Social Justice',
+            description: 'Advocate for human rights and social justice causes.',
+            level: 'Intermediate',
+            imageUrl: 'URL_to_image_32',
+            author: 'David Miller',
+            duration: '5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Political Campaign Strategy',
+            description: 'Discover effective strategies for political campaigns.',
+            level: 'Intermediate',
+            imageUrl: 'URL_to_image_33',
+            author: 'Lily Parker',
+            duration: '6 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Legal Studies and Paralegal Training',
+            description: 'Explore legal studies and prepare for a career as a paralegal.',
+            level: 'Intermediate',
+            imageUrl: 'URL_to_image_34',
+            author: 'Michael Green',
+            duration: '4 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Ethics in Politics and Law',
+            description: 'Discuss ethical considerations in politics and law.',
+            level: 'Intermediate',
+            imageUrl: 'URL_to_image_35',
+            author: 'Sophia King',
+            duration: '5 hours',
+            isEnrolled: false
+          },
+          {
+            title: 'Public Speaking and Debate Skills',
+            description: 'Develop public speaking and debate skills for effective communication.',
+            level: 'Intermediate',
+            imageUrl: 'URL_to_image_36',
+            author: 'Ethan Davis',
+            duration: '4.5 hours',
+            isEnrolled: false
+          }
+        ]
+      }
 ]
 
   

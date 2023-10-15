@@ -1,12 +1,13 @@
-import React, {useState,} from 'react'
-import { Link, useNavigate} from 'react-router-dom';
-import '../style/Navbar.css'
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import '../style/Navbar.css';
 
-
-function  NavBar() {
+function Navbar() {
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState(false);
   const [searchInput, setSearchInput] = useState('');
+  const [isOpen, setIsOpen] = useState(false);
+
+
 
   const handleInputChange = (e) => {
     setSearchInput(e.target.value);
@@ -17,45 +18,46 @@ function  NavBar() {
   };
 
   const handleSearch = () => {
-    console.log("yayayayaya")
-    if (searchInput.toLowerCase() === 'python') {
-      navigate('/searchResult');
-    }
-  }
+      navigate('/searchResults/' + searchInput);
+  };
+
+  const handleCategoryClick = (newCategory) => {
+    navigate(`/ClassList/${newCategory}`);
+  };
   
 
-    return (
-                
-                  <div className="nav-header">
-                    <Link to="/">
-                    <img
-                      loading="lazy"
-                      src ='/images/misc/logo.png'
-                      className="nav-image"
-                      alt="Site Logo"
-                    />
-                    </Link>
-                    <div className="nav-items">
-                    
-  <div className="nav-links dropdown">
-    <div className="nav-link-text">Browse</div>
-    <img
-      loading="lazy"
-      src="/images/misc/dropdownArrow.png"
-      className="nav-link-icon"
-      alt="Image Description"
-    />
-    <div className="dropdown-content">
-      <a href="#">Programming</a>
-      <a href="#">Design</a>
-      <a href="#">Business & Management</a>
-      <a href="#">Fashion Design</a>
-      <a href="#">Physical & Mental Health</a>
-      <a href="#">History & Religion</a>
-      <a href="#">Personal Development</a>
-      <a href="#">Politics & Law</a>
-    </div>
-  </div>
+  return (
+    <div className="nav-header">
+      <Link to="/">
+        <img
+          loading="lazy"
+          src="/images/misc/logo.png"
+          className="nav-image"
+          alt="Site Logo"
+        />
+      </Link>
+      <div className="nav-items">
+        <div className="nav-links dropdown">
+          <div className="nav-link-text">Browse</div>
+          <img
+            loading="lazy"
+            src="/images/misc/dropdownArrow.png"
+            className="nav-link-icon"
+            alt="Image Description"
+          />
+          <div className="dropdown-content">
+            <a onClick={() => handleCategoryClick('Programming')}>Programming</a>
+            <a onClick={() => handleCategoryClick('Design')}>Design</a>
+            <a onClick={() => handleCategoryClick('Business & Management')}>Business & Management</a>
+            <a onClick={() => handleCategoryClick('Fashion Design')}>Fashion Design</a>
+            <a onClick={() => handleCategoryClick('Physical & Mental Health')}>Physical & Mental Health</a>
+            <a onClick={() => handleCategoryClick('History & Religion')}>History & Religion</a>
+            <a onClick={() => handleCategoryClick('Lifestyle & Personal Development')}>Personal Development</a>
+            <a onClick={() => handleCategoryClick('Politics & Law')}>Politics & Law</a>
+          </div>
+        </div>
+
+     
 
                       <div className="nav-search">
                       <div className="nav-search">
@@ -83,7 +85,7 @@ function  NavBar() {
                     </div>
                     <div className="nav-icons">
                     
-                    <Link to="/myCourses">
+                    <Link to="#">
                       <img
                         loading="lazy"
                         src ='/images/misc/courses.png'
@@ -142,4 +144,4 @@ function  NavBar() {
     )
 }
     
-    export default NavBar
+    export default Navbar

@@ -24,7 +24,7 @@ function Dashboard() {
 			<div className ="sectionOfClasses">
 				<h4>Active Courses:</h4>
 <ul>
-{coursesData[4].courses.slice(0, 4).map((course) => (
+{coursesData[6].courses.slice(0, 4).map((course) => (
     
       <a href="#" className="innerDiv" style={{ backgroundImage: `url(${course.imageUrl})`,
       backgroundSize: 'cover',
@@ -86,7 +86,7 @@ function Dashboard() {
      <div className ="sectionOfClasses">
 				<h4>Trending In Your Interests:</h4>
         <ul>
-  {coursesData[0].courses.slice(0, 4).map((course) => (
+  {coursesData[3].courses.slice(0, 4).map((course) => (
         <a href="#" className="innerDiv" 
           style={{
             backgroundImage: `url(${course.imageUrl})`,

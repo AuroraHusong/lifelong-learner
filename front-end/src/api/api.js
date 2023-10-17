@@ -34,7 +34,7 @@ const coursesData = [
             title: 'Python for Data Science',
             description: 'Use Python for data analysis and visualization.',
             level: 'Intermediate',
-            imageUrl:  'images/api_images/programming/prog4.jpg',
+            imageUrl: 'images/api_images/programming/prog4.jpg',
             author: 'Emily Brown',
             duration: '8 hours',
             isEnrolled: false,

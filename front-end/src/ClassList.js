@@ -18,7 +18,7 @@ function ClassList() {
         <h4 className="categoryHeader">{selectedCategory}</h4>
         <div className="parentOfInnerDiv">
           {filteredCourses.courses.map((course, index) => (
-            <a href="#" className="innerDiv innerDiv-CL"
+            <a href="https://www.google.com/" className="innerDiv innerDiv-CL"
               key={index} 
               style={{
                 backgroundImage: `url(${process.env.PUBLIC_URL}/${course.imageUrl})`,

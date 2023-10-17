@@ -30,7 +30,7 @@ function SearchResults() {
       <h4 className="categoryHeader">Search Results for: {query}</h4>
       <div className="parentOfInnerDiv">
         {limitedSearchResults.map((course, index) => (
-          <a href="#" className="innerDiv innerDiv-CL" key={index}
+          <a href="https://www.google.com/" className="innerDiv innerDiv-CL" key={index}
             
               style={{
                 backgroundImage: `url(${process.env.PUBLIC_URL}/${course.imageUrl})`,

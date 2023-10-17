@@ -26,7 +26,7 @@ function Dashboard() {
 <ul>
 {coursesData[6].courses.slice(0, 4).map((course) => (
     
-      <a href="#" className="innerDiv" style={{ backgroundImage: `url(${course.imageUrl})`,
+      <a href="https://www.google.com/" className="innerDiv" style={{ backgroundImage: `url(${course.imageUrl})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
        }}>
@@ -62,7 +62,7 @@ function Dashboard() {
 				<h4>Recommended Courses:</h4>
         <ul>
   {coursesData[1].courses.slice(0, 4).map((course) => (
-        <a href="#" className="innerDiv" 
+        <a href="https://www.google.com/" className="innerDiv" 
           style={{
             backgroundImage: `url(${course.imageUrl})`,
             backgroundSize: 'cover',
@@ -87,7 +87,7 @@ function Dashboard() {
 				<h4>Trending In Your Interests:</h4>
         <ul>
   {coursesData[3].courses.slice(0, 4).map((course) => (
-        <a href="#" className="innerDiv" 
+        <a href="https://www.google.com/" className="innerDiv" 
           style={{
             backgroundImage: `url(${course.imageUrl})`,
             backgroundSize: 'cover',

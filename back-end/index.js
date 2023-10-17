@@ -13,9 +13,7 @@ app.use(cors({
   origin: 'http://localhost:3001',
 }));
 app.use(bodyParser.json());
-app.get('/api/courses', (req, res) => {
-  res.json(coursesData);
-});
+
 
 app.get('/api/users', (req, res) => {
   db
